@@ -9,6 +9,7 @@
 <meta name="description" content="Rico Bellano – Producer • Songwriter. Eigene Musik, Dance, elektronische Sounds, Discofox und italienisch inspirierte Musik.">
 
 <style>
+
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +32,10 @@ a {
   text-decoration: none;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+   ========================= */
 
 header {
   position: fixed;
@@ -39,15 +43,21 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
+
   background: rgba(5, 6, 8, 0.95);
-  border-bottom: 1px solid rgba(0, 217, 255, 0.25);
+
+  border-bottom:
+    1px solid rgba(0, 217, 255, 0.25);
+
   backdrop-filter: blur(10px);
 }
 
 .nav {
   max-width: 1200px;
   margin: auto;
+
   padding: 12px 25px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,14 +84,20 @@ nav a:hover {
   color: #00d9ff;
 }
 
-/* HERO */
+
+/* =========================
+   HERO / STARTSEITE
+   ========================= */
 
 .hero {
   min-height: 100vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-align: center;
+
   padding: 120px 25px 80px;
 
   background:
@@ -104,9 +120,13 @@ nav a:hover {
 
 .hero-logo {
   width: min(780px, 92vw);
+
   max-height: 430px;
+
   object-fit: contain;
+
   display: block;
+
   margin: 0 auto 30px;
 
   filter:
@@ -118,32 +138,112 @@ nav a:hover {
 .hero-text {
   max-width: 700px;
   margin: auto;
+
   color: #aaaaaa;
+
   font-size: 1.05rem;
 }
 
+
+/* =========================
+   HINWEIS JÖRG STIEFELHAGEN
+   ========================= */
+
+.creator-notice {
+  max-width: 850px;
+
+  margin: 35px auto 0;
+
+  padding: 25px 30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #11151a,
+      #080a0d
+    );
+
+  border:
+    1px solid rgba(0, 217, 255, 0.55);
+
+  border-left:
+    4px solid #00d9ff;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 0 25px rgba(0, 217, 255, 0.08);
+
+  text-align: left;
+}
+
+.creator-notice h3 {
+  margin-bottom: 18px;
+
+  color: #00d9ff;
+
+  font-size: 1rem;
+
+  letter-spacing: 1px;
+}
+
+.creator-notice p {
+  margin-bottom: 12px;
+
+  color: #bbbbbb;
+
+  line-height: 1.6;
+}
+
+.creator-notice p:last-child {
+  margin-bottom: 0;
+}
+
+.creator-notice strong {
+  color: #ffffff;
+}
+
+
+/* =========================
+   HERO BUTTONS
+   ========================= */
+
 .hero-buttons {
   margin-top: 35px;
+
   display: flex;
+
   justify-content: center;
+
   gap: 15px;
+
   flex-wrap: wrap;
 }
 
 .button {
   display: inline-block;
+
   padding: 14px 30px;
-  border: 1px solid #00d9ff;
+
+  border:
+    1px solid #00d9ff;
+
   color: #00d9ff;
+
   border-radius: 30px;
+
   font-weight: bold;
+
   transition: 0.3s;
 }
 
 .button:hover {
   background: #00d9ff;
+
   color: #050608;
-  box-shadow: 0 0 25px rgba(0, 217, 255, 0.45);
+
+  box-shadow:
+    0 0 25px rgba(0, 217, 255, 0.45);
 }
 
 .button.primary {
@@ -151,36 +251,49 @@ nav a:hover {
   color: #050608;
 }
 
-/* SECTIONS */
+
+/* =========================
+   SECTIONS
+   ========================= */
 
 section {
   max-width: 1200px;
+
   margin: auto;
+
   padding: 100px 25px;
 }
 
 .section-title {
   text-align: center;
+
   margin-bottom: 50px;
 }
 
 .section-title h2 {
   font-size: 2.5rem;
+
   text-transform: uppercase;
+
   letter-spacing: 4px;
 }
 
 .section-title p {
   margin-top: 10px;
+
   color: #888888;
 }
 
-/* MUSIC */
+
+/* =========================
+   MUSIC CARDS
+   ========================= */
 
 .music-card,
 .msv-card,
 .about-box,
 .legal {
+
   background:
     linear-gradient(
       145deg,
@@ -188,19 +301,28 @@ section {
       #080a0d
     );
 
-  border: 1px solid rgba(0, 217, 255, 0.20);
+  border:
+    1px solid rgba(0, 217, 255, 0.20);
+
   border-radius: 20px;
 
   box-shadow:
     0 0 35px rgba(0, 217, 255, 0.06);
 }
 
-/* MSV */
+
+/* =========================
+   MSV SONG
+   ========================= */
 
 .msv-card {
+
   max-width: 1000px;
+
   margin: 0 auto 45px;
+
   padding: 50px 40px;
+
   text-align: center;
 
   border-color:
@@ -208,84 +330,118 @@ section {
 }
 
 .msv-card h3 {
+
   font-size: 2.2rem;
+
   margin-bottom: 12px;
 }
 
 .msv-subtitle {
+
   color: #aaaaaa;
+
   margin-bottom: 30px;
 }
 
 .msv-buttons {
+
   display: flex;
+
   justify-content: center;
+
   gap: 15px;
+
   flex-wrap: wrap;
 }
 
 .msv-button {
+
   display: inline-block;
+
   padding: 13px 25px;
 
-  border: 1px solid #00d9ff;
+  border:
+    1px solid #00d9ff;
+
   border-radius: 30px;
 
   color: #00d9ff;
+
   font-weight: bold;
 
   transition: 0.3s;
 }
 
 .msv-button:hover {
+
   background: #00d9ff;
+
   color: #050608;
 
   box-shadow:
     0 0 25px rgba(0, 217, 255, 0.45);
 }
 
-/* MUSIC GRID */
+
+/* =========================
+   MUSIC GRID
+   ========================= */
 
 .music-grid {
+
   display: grid;
+
   grid-template-columns:
     repeat(3, 1fr);
 
   gap: 20px;
 
   max-width: 1100px;
+
   margin: auto;
 }
 
 .music-card {
+
   padding: 35px 25px;
+
   text-align: center;
 }
 
 .music-card h3 {
+
   font-size: 1.6rem;
+
   margin-bottom: 12px;
 }
 
 .music-card p {
+
   color: #aaaaaa;
+
   margin-bottom: 25px;
 }
 
 .music-buttons {
+
   display: flex;
+
   justify-content: center;
+
   gap: 15px;
+
   flex-wrap: wrap;
 }
 
 .music-button {
+
   display: inline-block;
 
   padding: 11px 20px;
 
-  border: 1px solid #444444;
+  border:
+    1px solid #444444;
+
   border-radius: 30px;
 
   color: #dddddd;
@@ -294,99 +450,142 @@ section {
 }
 
 .music-button:hover {
+
   border-color: #00d9ff;
+
   color: #00d9ff;
 }
 
-/* ABOUT */
+
+/* =========================
+   ABOUT
+   ========================= */
 
 .about-container {
+
   max-width: 900px;
+
   margin: auto;
 }
 
 .about-box {
+
   margin-bottom: 35px;
+
   padding: 35px;
 }
 
 .about-box h3 {
+
   color: #00d9ff;
+
   font-size: 1.5rem;
+
   margin-bottom: 18px;
 }
 
 .about-box p {
+
   color: #bbbbbb;
+
   margin-bottom: 15px;
 }
 
 .about-box p:last-child {
+
   margin-bottom: 0;
 }
 
 .highlight {
+
   color: #ffffff;
+
   font-weight: bold;
 }
 
-/* TIKTOK */
+
+/* =========================
+   TIKTOK
+   ========================= */
 
 .social-area {
+
   text-align: center;
 }
 
 .tiktok-button {
+
   display: inline-block;
 
   padding: 15px 35px;
 
-  border: 1px solid #00d9ff;
+  border:
+    1px solid #00d9ff;
+
   border-radius: 30px;
 
   color: #00d9ff;
+
   font-weight: bold;
 
   transition: 0.3s;
 }
 
 .tiktok-button:hover {
+
   background: #00d9ff;
+
   color: #050608;
 
   box-shadow:
     0 0 25px rgba(0, 217, 255, 0.4);
 }
 
-/* LEGAL */
+
+/* =========================
+   LEGAL
+   ========================= */
 
 .legal {
+
   max-width: 900px;
+
   margin: auto;
+
   padding: 45px;
 }
 
 .legal h3 {
+
   color: #00d9ff;
+
   margin: 28px 0 12px;
 }
 
 .legal h3:first-child {
+
   margin-top: 0;
 }
 
 .legal p {
+
   color: #bbbbbb;
+
   margin-bottom: 15px;
 }
 
 .legal strong {
+
   color: #ffffff;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
+
   border-top:
     1px solid rgba(0, 217, 255, 0.20);
 
@@ -398,45 +597,62 @@ footer {
 }
 
 footer .brand {
+
   font-weight: 800;
+
   letter-spacing: 3px;
 }
 
 footer .brand span {
+
   color: #00d9ff;
 }
 
 footer p {
+
   margin-top: 10px;
+
   color: #777777;
+
   font-size: 0.9rem;
 }
 
 .footer-links {
+
   margin-top: 20px;
 
   display: flex;
+
   justify-content: center;
 
   gap: 25px;
+
   flex-wrap: wrap;
 }
 
 .footer-links a {
+
   color: #888888;
+
   font-size: 0.85rem;
+
   transition: 0.3s;
 }
 
 .footer-links a:hover {
+
   color: #00d9ff;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 850px) {
 
   .music-grid {
+
     grid-template-columns: 1fr;
   }
 
@@ -445,43 +661,63 @@ footer p {
 @media (max-width: 700px) {
 
   nav {
+
     display: none;
   }
 
   .header-logo {
+
     height: 45px;
   }
 
   .hero-logo {
+
     max-height: 300px;
   }
 
   .hero-text {
+
     font-size: 0.95rem;
   }
 
   .section-title h2 {
+
     font-size: 2rem;
   }
 
   .msv-card {
+
     padding: 35px 20px;
   }
 
   .msv-card h3 {
+
     font-size: 1.8rem;
   }
 
   .music-card {
+
     padding: 30px 20px;
   }
 
   .about-box {
+
     padding: 28px 22px;
   }
 
   .legal {
+
     padding: 30px 22px;
+  }
+
+  .creator-notice {
+
+    padding: 22px 20px;
+  }
+
+  .creator-notice h3 {
+
+    font-size: 0.9rem;
   }
 
 }
@@ -489,9 +725,13 @@ footer p {
 </style>
 </head>
 
+
 <body>
 
-<!-- HEADER -->
+
+<!-- =========================
+     HEADER
+     ========================= -->
 
 <header>
 
@@ -508,15 +748,24 @@ footer p {
 
     </a>
 
+
     <nav>
 
-      <a href="#home">Home</a>
+      <a href="#home">
+        Home
+      </a>
 
-      <a href="#music">Music</a>
+      <a href="#music">
+        Music
+      </a>
 
-      <a href="#about">About</a>
+      <a href="#about">
+        About
+      </a>
 
-      <a href="#contact">TikTok</a>
+      <a href="#contact">
+        TikTok
+      </a>
 
     </nav>
 
@@ -525,12 +774,16 @@ footer p {
 </header>
 
 
-<!-- MAIN -->
+<!-- =========================
+     MAIN
+     ========================= -->
 
 <main>
 
 
-<!-- HOME -->
+<!-- =========================
+     HOME
+     ========================= -->
 
 <section
   class="hero"
@@ -538,10 +791,12 @@ footer p {
 
   <div class="hero-content">
 
+
     <img
       class="hero-logo"
       src="ChatGPT%20Image%2013.%20Sept.%202026%2C%2018_30_45.png"
       alt="Rico Bellano – Producer & Songwriter">
+
 
     <div class="hero-text">
 
@@ -552,6 +807,38 @@ footer p {
 
     </div>
 
+
+    <!-- HINWEIS -->
+
+    <div class="creator-notice">
+
+      <h3>
+        ℹ️ HINWEIS ZUR PERSON HINTER DEN MUSIKPROJEKTEN
+      </h3>
+
+      <p>
+        <strong>
+          Jörg Stiefelhagen ist ausschließlich als Produzent und Songwriter tätig.
+        </strong>
+      </p>
+
+      <p>
+        Er ist <strong>nicht die dargestellten Künstlerfiguren</strong>
+        und steht mit diesen
+        <strong>
+          in keinem persönlichen oder künstlerischen Zusammenhang.
+        </strong>
+      </p>
+
+      <p>
+        Die auf dieser Website verwendeten Künstlernamen und Künstlerfiguren
+        dienen ausschließlich der Darstellung und Veröffentlichung
+        der jeweiligen Musikprojekte.
+      </p>
+
+    </div>
+
+
     <div class="hero-buttons">
 
       <a
@@ -561,6 +848,7 @@ footer p {
         MEINE MUSIK
 
       </a>
+
 
       <a
         class="button"
@@ -577,13 +865,18 @@ footer p {
 </section>
 
 
-<!-- MUSIC -->
+<!-- =========================
+     MUSIC
+     ========================= -->
 
 <section id="music">
 
+
   <div class="section-title">
 
-    <h2>Meine Musik</h2>
+    <h2>
+      Meine Musik
+    </h2>
 
     <p>
       Musik zum Hören, Tanzen, Träumen und Genießen.
@@ -606,6 +899,7 @@ footer p {
 
 
     <div class="msv-buttons">
+
 
       <a
         class="msv-button"
@@ -644,12 +938,12 @@ footer p {
   </div>
 
 
-  <!-- ARTISTS -->
+  <!-- MUSIC GRID -->
 
   <div class="music-grid">
 
 
-    <!-- RICO -->
+    <!-- RICO BELLANO -->
 
     <div class="music-card">
 
@@ -662,6 +956,7 @@ footer p {
         Discofox und italienisch
         inspirierte Sounds.
       </p>
+
 
       <div class="music-buttons">
 
@@ -680,7 +975,7 @@ footer p {
     </div>
 
 
-    <!-- CODY -->
+    <!-- CODY MAYFIELD -->
 
     <div class="music-card">
 
@@ -693,6 +988,7 @@ footer p {
         Geschichten, Stimmungen
         und eine andere musikalische Seite.
       </p>
+
 
       <div class="music-buttons">
 
@@ -725,6 +1021,7 @@ footer p {
         und tanzbare Duette.
       </p>
 
+
       <div class="music-buttons">
 
         <a
@@ -746,13 +1043,18 @@ footer p {
 </section>
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+     ========================= -->
 
 <section id="about">
 
+
   <div class="section-title">
 
-    <h2>About</h2>
+    <h2>
+      About
+    </h2>
 
     <p>
       Meine Musik. Meine Welt.
@@ -772,16 +1074,18 @@ footer p {
         Wer steckt hinter der Musik?
       </h3>
 
+
       <p>
-        Hinter dem Künstlernamen
-        Rico Bellano steht Jörg Stiefelhagen.
+        Hinter dem Künstlernamen Rico Bellano steht Jörg Stiefelhagen.
       </p>
+
 
       <p>
         Die Idee dahinter war,
         eigene Musik zu machen und
         damit Menschen zu begeistern.
       </p>
+
 
       <p>
         Musik kann gute Laune machen,
@@ -792,6 +1096,7 @@ footer p {
         Alltag abzuschalten.
       </p>
 
+
       <p>
         Genau dieses Gefühl möchte ich
         mit meiner Musik vermitteln.
@@ -800,13 +1105,14 @@ footer p {
     </div>
 
 
-    <!-- RICO -->
+    <!-- WARUM RICO BELLANO -->
 
     <div class="about-box">
 
       <h3>
         Warum Rico Bellano?
       </h3>
+
 
       <p>
         Rico Bellano ist meine
@@ -818,12 +1124,14 @@ footer p {
         </span>.
       </p>
 
+
       <p>
         Ich wollte meiner eigenen Musik
         eine eigene Identität geben
         und mit verschiedenen Sounds
         und Ideen experimentieren.
       </p>
+
 
       <p>
         Dabei möchte ich mich nicht
@@ -834,11 +1142,13 @@ footer p {
         mal einfach nur Spaß machen.
       </p>
 
+
       <p>
         Für mich zählt vor allem,
         dass die Musik Menschen erreicht
         und ihnen etwas gibt.
       </p>
+
 
       <p class="highlight">
         SOUND ON. WORLD OFF.
@@ -847,7 +1157,7 @@ footer p {
     </div>
 
 
-    <!-- CODY -->
+    <!-- CODY MAYFIELD -->
 
     <div class="about-box">
 
@@ -855,11 +1165,13 @@ footer p {
         Warum Cody Mayfield?
       </h3>
 
+
       <p>
         Mit Cody Mayfield kann ich
         eine ganz andere musikalische
         Seite zeigen.
       </p>
+
 
       <p>
         Cody steht für
@@ -868,6 +1180,7 @@ footer p {
         </span>.
       </p>
 
+
       <p>
         Hier kann ich Geschichten erzählen,
         andere Stimmungen aufgreifen
@@ -875,12 +1188,14 @@ footer p {
         ausdrücken.
       </p>
 
+
       <p>
         Rico Bellano und Cody Mayfield
         sind unterschiedliche musikalische
         Welten – aber beide haben
         denselben Ursprung:
       </p>
+
 
       <p class="highlight">
         Meine Leidenschaft für eigene Musik.
@@ -897,10 +1212,12 @@ footer p {
         Rico Bellano &amp; Giulia
       </h3>
 
+
       <p>
         Manchmal passt eine Stimme allein
         nicht zu einer Geschichte.
       </p>
+
 
       <p>
         Deshalb gibt es
@@ -908,6 +1225,7 @@ footer p {
           Rico Bellano &amp; Giulia
         </span>.
       </p>
+
 
       <p>
         Giulia ist meine weibliche
@@ -917,12 +1235,14 @@ footer p {
         noch mehr Gefühl bekommen.
       </p>
 
+
       <p>
         Besonders deutsch-italienische Songs,
         romantische Geschichten und
         tanzbare Duette gehören zu dieser
         gemeinsamen musikalischen Welt.
       </p>
+
 
       <p class="highlight">
         Zwei Stimmen. Zwei Perspektiven.
@@ -937,14 +1257,15 @@ footer p {
     <div class="about-box">
 
       <h3>
-        Was ich mit meiner Musik
-        erreichen möchte
+        Was ich mit meiner Musik erreichen möchte
       </h3>
+
 
       <p>
         Ich möchte keine Musik machen,
         die einfach nur im Hintergrund läuft.
       </p>
+
 
       <p>
         Ich möchte Songs machen,
@@ -952,6 +1273,7 @@ footer p {
         tanzt, lächelt oder sich an
         einen besonderen Moment erinnert.
       </p>
+
 
       <p>
         Wenn ein Song von mir jemanden
@@ -962,6 +1284,7 @@ footer p {
         was ich mit meiner Musik
         erreichen möchte.
       </p>
+
 
       <p class="highlight">
         Meine Musik soll Menschen begeistern.
@@ -974,9 +1297,12 @@ footer p {
 </section>
 
 
-<!-- TIKTOK -->
+<!-- =========================
+     TIKTOK
+     ========================= -->
 
 <section id="contact">
+
 
   <div class="section-title">
 
@@ -989,6 +1315,7 @@ footer p {
     </p>
 
   </div>
+
 
   <div class="social-area">
 
@@ -1007,9 +1334,12 @@ footer p {
 </section>
 
 
-<!-- IMPRESSUM -->
+<!-- =========================
+     IMPRESSUM
+     ========================= -->
 
 <section id="impressum">
+
 
   <div class="section-title">
 
@@ -1026,9 +1356,11 @@ footer p {
 
   <div class="legal">
 
+
     <h3>
       Angaben zum Anbieter
     </h3>
+
 
     <p>
 
@@ -1076,6 +1408,7 @@ footer p {
       Künstlerische Tätigkeit
     </h3>
 
+
     <p>
       Rico Bellano – Producer • Songwriter
     </p>
@@ -1085,9 +1418,12 @@ footer p {
 </section>
 
 
-<!-- DATENSCHUTZ -->
+<!-- =========================
+     DATENSCHUTZ
+     ========================= -->
 
 <section id="datenschutz">
+
 
   <div class="section-title">
 
@@ -1109,11 +1445,13 @@ footer p {
       1. Verantwortlicher
     </h3>
 
+
     <p>
       Verantwortlicher für die Verarbeitung
       personenbezogener Daten auf dieser
       Website ist:
     </p>
+
 
     <p>
 
@@ -1140,6 +1478,7 @@ footer p {
 
     </p>
 
+
     <p>
       E-Mail:
       info@ricobellanomusic.de
@@ -1150,6 +1489,7 @@ footer p {
       2. Hosting der Website
     </h3>
 
+
     <p>
       Diese Website wird über
       <strong>
@@ -1157,6 +1497,7 @@ footer p {
       </strong>
       bereitgestellt.
     </p>
+
 
     <p>
       Beim Aufruf der Website können
@@ -1171,6 +1512,7 @@ footer p {
       3. Zweck der Datenverarbeitung
     </h3>
 
+
     <p>
       Die Verarbeitung technisch erforderlicher
       Daten dient dazu, die Website sicher
@@ -1183,6 +1525,7 @@ footer p {
     <h3>
       4. Kontaktaufnahme per E-Mail
     </h3>
+
 
     <p>
       Wenn Sie per E-Mail Kontakt aufnehmen,
@@ -1197,6 +1540,7 @@ footer p {
       5. Analyse und Tracking
     </h3>
 
+
     <p>
       Auf dieser Website werden derzeit
       keine eigenen Analyse- oder
@@ -1209,11 +1553,13 @@ footer p {
       6. Social Media und externe Inhalte
     </h3>
 
+
     <p>
       Auf dieser Website werden derzeit
       keine Social-Media-Widgets und keine
       eingebetteten Videos verwendet.
     </p>
+
 
     <p>
       Links zu TikTok, Spotify, Amazon Music
@@ -1228,6 +1574,7 @@ footer p {
     <h3>
       7. Ihre Rechte
     </h3>
+
 
     <p>
       Sie haben im Rahmen der gesetzlichen
@@ -1245,6 +1592,7 @@ footer p {
       8. Änderungen
     </h3>
 
+
     <p>
       Diese Datenschutzerklärung kann
       angepasst werden, wenn sich die
@@ -1256,27 +1604,36 @@ footer p {
 
 </section>
 
+
 </main>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+     ========================= -->
 
 <footer>
 
+
   <div class="brand">
+
     RICO
     <span>
       BELLANO
     </span>
+
   </div>
+
 
   <p>
     Producer • Songwriter
   </p>
 
+
   <p>
     SOUND ON. WORLD OFF.
   </p>
+
 
   <div class="footer-links">
 
@@ -1291,6 +1648,7 @@ footer p {
   </div>
 
 </footer>
+
 
 </body>
 </html>
