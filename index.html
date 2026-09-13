@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rico Bellano | DJ • Producer • Songwriter</title>
+
+  <meta name="description" content="Rico Bellano – DJ, Producer & Songwriter. Dance, Discofox, Italo-Dance und elektronische Musik.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #050608;
+      color: #f2f2f2;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* HEADER */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(5, 6, 8, 0.92);
+      border-bottom: 1px solid rgba(0, 220, 255, 0.25);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-text {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 3px;
+    }
+
+    .logo-text span {
+      color: #00d9ff;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      font-size: 0.9rem;
+      color: #ccc;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00d9ff;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 25px 80px;
+      background:
+        radial-gradient(circle at center, rgba(0, 200, 255, 0.15), transparent 45%),
+        linear-gradient(180deg, #080a0e 0%, #050608 100%);
+    }
+
+    .hero-content {
+      max-width: 950px;
+    }
+
+    .hero h1 {
+      font-size: clamp(3.5rem, 10vw, 8rem);
+      font-weight: 900;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow:
+        0 0 15px rgba(0, 220, 255, 0.35),
+        0 0 45px rgba(0, 220, 255, 0.15);
+    }
+
+    .hero h1 span {
+      color: #00d9ff;
+    }
+
+    .subtitle {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      letter-spacing: 5px;
+      color: #aaa;
+      text-transform: uppercase;
+    }
+
+    .slogan {
+      margin-top: 35px;
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    .slogan span {
+      color: #00d9ff;
+    }
+
+    .hero-buttons {
+      margin-top: 45px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      border: 1px solid #00d9ff;
+      color: #00d9ff;
+      border-radius: 30px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #00d9ff;
+      color: #050608;
+      box-shadow: 0 0 25px rgba(0, 217, 255, 0.45);
+    }
+
+    .button.primary {
+      background: #00d9ff;
+      color: #050608;
+    }
+
+    /* SECTIONS */
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 100px 25px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+
+    .section-title p {
+      margin-top: 10px;
+      color: #888;
+    }
+
+    /* MUSIC */
+
+    .music-card {
+      max-width: 850px;
+      margin: auto;
+      padding: 45px;
+      text-align: center;
+      background: linear-gradient(145deg, #101319, #080a0d);
+      border: 1px solid rgba(0, 217, 255, 0.25);
+      border-radius: 20px;
+      box-shadow: 0 0 35px rgba(0, 217, 255, 0.08);
+    }
+
+    .music-card h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .music-card p {
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    .platforms {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .platform {
+      padding: 12px 20px;
+      border: 1px solid #444;
+      border-radius: 25px;
+      color: #ddd;
+      transition: 0.3s;
+    }
+
+    .platform:hover {
+      border-color: #00d9ff;
+      color: #00d9ff;
+    }
+
+    /* ABOUT */
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      color: #bbb;
+      font-size: 1.1rem;
+    }
+
+    .about strong {
+      color: #00d9ff;
+    }
+
+    /* VIDEO */
+
+    .video-box {
+      max-width: 850px;
+      margin: auto;
+      aspect-ratio: 16 / 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0, 217, 255, 0.25);
+      border-radius: 20px;
+      background: #0d1015;
+      color: #777;
+    }
+
+    /* SOCIAL */
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .social {
+      padding: 13px 25px;
+      border: 1px solid #333;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .social:hover {
+      border-color: #00d9ff;
+      color: #00d9ff;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid rgba(0, 217, 255, 0.2);
+      padding: 40px 25px;
+      text-align: center;
+      background: #030405;
+    }
+
+    footer .brand {
+      font-weight: 800;
+      letter-spacing: 3px;
+    }
+
+    footer .brand span {
+      color: #00d9ff;
+    }
+
+    footer p {
+      margin-top: 10px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .footer-links a:hover {
+      color: #00d9ff;
+    }
+
+    @media (max-width: 700px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        letter-spacing: 4px;
+      }
+
+      .subtitle {
+        letter-spacing: 3px;
+      }
+
+      .music-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="nav">
+
+      <div class="logo-text">
+        RICO <span>BELLANO</span>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#music">Music</a>
+        <a href="#videos">Videos</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+
+        <h1>RICO <span>BELLANO</span></h1>
+
+        <div class="subtitle">
+          DJ • Producer • Songwriter
+        </div>
+
+        <div class="slogan">
+          SOUND ON. <span>WORLD OFF.</span>
+        </div>
+
+        <div class="hero-buttons">
+          <a class="button primary" href="#music">
+            MUSIC
+          </a>
+
+          <a class="button" href="#about">
+            ABOUT RICO
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MUSIC -->
+
+    <section id="music">
+
+      <div class="section-title">
+        <h2>Music</h2>
+        <p>New sounds. New emotions. New releases.</p>
+      </div>
+
+      <div class="music-card">
+
+        <h3>Rico Bellano</h3>
+
+        <p>
+          Dance • Discofox • Italo-Dance • Electronic
+        </p>
+
+        <div class="platforms">
+
+          <a class="platform" href="#" target="_blank">
+            Spotify
+          </a>
+
+          <a class="platform" href="#" target="_blank">
+            Apple Music
+          </a>
+
+          <a class="platform" href="#" target="_blank">
+            YouTube Music
+          </a>
+
+          <a class="platform" href="#" target="_blank">
+            Amazon Music
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEOS -->
+
+    <section id="videos">
+
+      <div class="section-title">
+        <h2>Videos</h2>
+        <p>Music in motion.</p>
+      </div>
+
+      <div class="video-box">
+        Videos werden hier später eingebunden
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+      <div class="section-title">
+        <h2>About Rico</h2>
+      </div>
+
+      <div class="about">
+
+        <p>
+          <strong>Rico Bellano</strong> steht für moderne Dance-Musik,
+          elektronische Sounds und eingängige Melodien.
+        </p>
+
+        <br>
+
+        <p>
+          Als DJ, Producer und Songwriter verbindet Rico
+          moderne elektronische Produktionen mit
+          emotionalen Geschichten und tanzbaren Beats.
+        </p>
+
+        <br>
+
+        <p>
+          Von Dance und Discofox bis zu italienisch
+          inspirierten Sounds – jeder Track bekommt seinen
+          eigenen Charakter.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+      <div class="section-title">
+        <h2>Follow Rico</h2>
+        <p>Stay connected.</p>
+      </div>
+
+      <div class="socials">
+
+        <a class="social" href="#" target="_blank">
+          Instagram
+        </a>
+
+        <a class="social" href="#" target="_blank">
+          Facebook
+        </a>
+
+        <a class="social" href="#" target="_blank">
+          YouTube
+        </a>
+
+        <a class="social" href="#" target="_blank">
+          TikTok
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="brand">
+      RICO <span>BELLANO</span>
+    </div>
+
+    <p>
+      DJ • Producer • Songwriter
+    </p>
+
+    <p>
+      SOUND ON. WORLD OFF.
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#">
+        Impressum
+      </a>
+
+      <a href="#">
+        Datenschutz
+      </a>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
