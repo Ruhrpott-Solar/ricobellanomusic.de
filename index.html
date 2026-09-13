@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Rico Bellano | DJ • Producer • Songwriter</title>
-  <meta name="description" content="Rico Bellano – DJ, Producer & Songwriter. Dance, Discofox, Italo-Dance und elektronische Musik.">
+
+  <meta name="description"
+        content="Rico Bellano – DJ, Producer & Songwriter. Dance, Discofox, Italo-Dance und elektronische Musik.">
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -29,28 +33,37 @@
       text-decoration: none;
     }
 
+    /* =========================
+       HEADER
+       ========================= */
+
     header {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(5, 6, 8, 0.92);
-      border-bottom: 1px solid rgba(0, 220, 255, 0.25);
+
+      background: rgba(5, 6, 8, 0.94);
+
+      border-bottom: 1px solid rgba(0, 217, 255, 0.25);
+
       backdrop-filter: blur(10px);
     }
 
     .nav {
       max-width: 1200px;
       margin: auto;
-      padding: 14px 25px;
+
+      padding: 12px 25px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     .header-logo {
-      height: 52px;
+      height: 55px;
       width: auto;
       display: block;
     }
@@ -61,8 +74,8 @@
     }
 
     nav a {
+      color: #cccccc;
       font-size: 0.9rem;
-      color: #ccc;
       transition: 0.3s;
     }
 
@@ -70,16 +83,32 @@
       color: #00d9ff;
     }
 
+    /* =========================
+       HERO
+       ========================= */
+
     .hero {
       min-height: 100vh;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       text-align: center;
+
       padding: 120px 25px 80px;
+
       background:
-        radial-gradient(circle at center, rgba(0, 200, 255, 0.15), transparent 45%),
-        linear-gradient(180deg, #080a0e 0%, #050608 100%);
+        radial-gradient(
+          circle at center,
+          rgba(0, 200, 255, 0.16),
+          transparent 45%
+        ),
+        linear-gradient(
+          180deg,
+          #080a0e 0%,
+          #050608 100%
+        );
     }
 
     .hero-content {
@@ -88,36 +117,54 @@
     }
 
     .hero-logo {
-      width: min(760px, 90vw);
-      max-height: 420px;
+      width: min(780px, 92vw);
+      max-height: 430px;
+
       object-fit: contain;
+
       display: block;
-      margin: 0 auto 25px;
-      filter: drop-shadow(0 0 25px rgba(0, 217, 255, 0.22));
+
+      margin: 0 auto 30px;
+
+      filter:
+        drop-shadow(
+          0 0 25px rgba(0, 217, 255, 0.25)
+        );
     }
 
     .hero-buttons {
-      margin-top: 40px;
+      margin-top: 35px;
+
       display: flex;
       justify-content: center;
+
       gap: 15px;
+
       flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
-      padding: 14px 28px;
+
+      padding: 14px 30px;
+
       border: 1px solid #00d9ff;
+
       color: #00d9ff;
+
       border-radius: 30px;
-      font-weight: 700;
+
+      font-weight: bold;
+
       transition: 0.3s;
     }
 
     .button:hover {
       background: #00d9ff;
       color: #050608;
-      box-shadow: 0 0 25px rgba(0, 217, 255, 0.45);
+
+      box-shadow:
+        0 0 25px rgba(0, 217, 255, 0.45);
     }
 
     .button.primary {
@@ -125,74 +172,150 @@
       color: #050608;
     }
 
+    /* =========================
+       SECTIONS
+       ========================= */
+
     section {
       max-width: 1200px;
+
       margin: auto;
+
       padding: 100px 25px;
     }
 
     .section-title {
       text-align: center;
+
       margin-bottom: 50px;
     }
 
     .section-title h2 {
       font-size: 2.5rem;
+
       text-transform: uppercase;
+
       letter-spacing: 4px;
     }
 
     .section-title p {
       margin-top: 10px;
-      color: #888;
+
+      color: #888888;
     }
+
+    /* =========================
+       MUSIC
+       ========================= */
 
     .music-card {
       max-width: 850px;
+
       margin: auto;
+
       padding: 45px;
+
       text-align: center;
-      background: linear-gradient(145deg, #101319, #080a0d);
-      border: 1px solid rgba(0, 217, 255, 0.25);
+
+      background:
+        linear-gradient(
+          145deg,
+          #101319,
+          #080a0d
+        );
+
+      border: 1px solid
+        rgba(0, 217, 255, 0.25);
+
       border-radius: 20px;
-      box-shadow: 0 0 35px rgba(0, 217, 255, 0.08);
+
+      box-shadow:
+        0 0 35px
+        rgba(0, 217, 255, 0.08);
     }
 
     .music-card h3 {
       font-size: 2rem;
+
       margin-bottom: 10px;
     }
 
     .music-card p {
-      color: #aaa;
+      color: #aaaaaa;
+
       margin-bottom: 30px;
     }
 
     .platforms {
       display: flex;
+
       justify-content: center;
+
       gap: 15px;
+
       flex-wrap: wrap;
     }
 
     .platform {
       padding: 12px 20px;
-      border: 1px solid #444;
+
+      border: 1px solid #444444;
+
       border-radius: 25px;
-      color: #ddd;
+
+      color: #dddddd;
+
       transition: 0.3s;
     }
 
     .platform:hover {
       border-color: #00d9ff;
+
       color: #00d9ff;
     }
 
+    /* =========================
+       VIDEOS
+       ========================= */
+
+    .video-box {
+      max-width: 850px;
+
+      margin: auto;
+
+      aspect-ratio: 16 / 9;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      border: 1px solid
+        rgba(0, 217, 255, 0.25);
+
+      border-radius: 20px;
+
+      background: #0d1015;
+
+      color: #777777;
+    }
+
+    /* =========================
+       ABOUT
+       ========================= */
+
     .about {
       max-width: 850px;
+
       margin: auto;
+
       text-align: center;
-      color: #bbb;
+
+      color: #bbbbbb;
+
       font-size: 1.1rem;
     }
 
@@ -200,47 +323,94 @@
       color: #00d9ff;
     }
 
-    .video-box {
-      max-width: 850px;
-      margin: auto;
-      aspect-ratio: 16 / 9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(0, 217, 255, 0.25);
-      border-radius: 20px;
-      background: #0d1015;
-      color: #777;
-    }
+    /* =========================
+       SOCIALS
+       ========================= */
 
     .socials {
       display: flex;
+
       justify-content: center;
+
       gap: 15px;
+
       flex-wrap: wrap;
     }
 
     .social {
       padding: 13px 25px;
-      border: 1px solid #333;
+
+      border: 1px solid #333333;
+
       border-radius: 25px;
+
       transition: 0.3s;
     }
 
     .social:hover {
       border-color: #00d9ff;
+
       color: #00d9ff;
     }
 
+    /* =========================
+       IMPRESSUM
+       ========================= */
+
+    .legal {
+      max-width: 850px;
+
+      margin: auto;
+
+      padding: 40px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #101319,
+          #080a0d
+        );
+
+      border: 1px solid
+        rgba(0, 217, 255, 0.20);
+
+      border-radius: 20px;
+    }
+
+    .legal h3 {
+      color: #00d9ff;
+
+      margin-bottom: 20px;
+    }
+
+    .legal p {
+      color: #cccccc;
+
+      margin-bottom: 18px;
+    }
+
+    .legal strong {
+      color: #ffffff;
+    }
+
+    /* =========================
+       FOOTER
+       ========================= */
+
     footer {
-      border-top: 1px solid rgba(0, 217, 255, 0.2);
+      border-top: 1px solid
+        rgba(0, 217, 255, 0.20);
+
       padding: 40px 25px;
+
       text-align: center;
+
       background: #030405;
     }
 
     footer .brand {
       font-weight: 800;
+
       letter-spacing: 3px;
     }
 
@@ -250,34 +420,48 @@
 
     footer p {
       margin-top: 10px;
-      color: #777;
+
+      color: #777777;
+
       font-size: 0.9rem;
     }
 
     .footer-links {
       margin-top: 20px;
+
       display: flex;
+
       justify-content: center;
+
       gap: 20px;
+
       flex-wrap: wrap;
     }
 
     .footer-links a {
-      color: #888;
+      color: #888888;
+
       font-size: 0.85rem;
+
+      transition: 0.3s;
     }
 
     .footer-links a:hover {
       color: #00d9ff;
     }
 
+    /* =========================
+       MOBILE
+       ========================= */
+
     @media (max-width: 700px) {
+
       nav {
         display: none;
       }
 
       .header-logo {
-        height: 44px;
+        height: 45px;
       }
 
       .hero-logo {
@@ -287,34 +471,70 @@
       .music-card {
         padding: 30px 20px;
       }
+
+      .legal {
+        padding: 30px 20px;
+      }
+
+      .section-title h2 {
+        font-size: 2rem;
+      }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
+
+  <!-- =========================
+       HEADER
+       ========================= -->
+
   <header>
+
     <div class="nav">
 
       <a href="#home" aria-label="Rico Bellano Startseite">
+
         <img
           class="header-logo"
           src="Rico%20Bellano%20Neon-Logo%20im%20Nebel.png"
           alt="Rico Bellano">
+
       </a>
 
+
       <nav>
+
         <a href="#home">Home</a>
+
         <a href="#music">Music</a>
+
         <a href="#videos">Videos</a>
+
         <a href="#about">About</a>
+
         <a href="#contact">Contact</a>
+
       </nav>
 
     </div>
+
   </header>
 
+
+
+  <!-- =========================
+       HAUPTINHALT
+       ========================= -->
+
   <main>
+
+
+    <!-- HOME -->
 
     <section class="hero" id="home">
 
@@ -323,23 +543,46 @@
         <img
           class="hero-logo"
           src="Rico%20Bellano%20Neon-Logo%20im%20Nebel.png"
-          alt="Rico Bellano – DJ, Producer & Songwriter">
+          alt="Rico Bellano – DJ Producer Songwriter">
+
 
         <div class="hero-buttons">
-          <a class="button primary" href="#music">MUSIC</a>
-          <a class="button" href="#about">ABOUT RICO</a>
+
+          <a
+            class="button primary"
+            href="#music">
+            MUSIC
+          </a>
+
+
+          <a
+            class="button"
+            href="#about">
+            ABOUT RICO
+          </a>
+
         </div>
 
       </div>
 
     </section>
 
+
+
+    <!-- MUSIC -->
+
     <section id="music">
 
       <div class="section-title">
+
         <h2>Music</h2>
-        <p>New sounds. New emotions. New releases.</p>
+
+        <p>
+          New sounds. New emotions. New releases.
+        </p>
+
       </div>
+
 
       <div class="music-card">
 
@@ -349,21 +592,33 @@
           Dance • Discofox • Italo-Dance • Electronic
         </p>
 
+
         <div class="platforms">
 
-          <a class="platform" href="#" target="_blank">
+          <a
+            class="platform"
+            href="#">
             Spotify
           </a>
 
-          <a class="platform" href="#" target="_blank">
+
+          <a
+            class="platform"
+            href="#">
             Apple Music
           </a>
 
-          <a class="platform" href="#" target="_blank">
+
+          <a
+            class="platform"
+            href="#">
             YouTube Music
           </a>
 
-          <a class="platform" href="#" target="_blank">
+
+          <a
+            class="platform"
+            href="#">
             Amazon Music
           </a>
 
@@ -373,73 +628,128 @@
 
     </section>
 
+
+
+    <!-- VIDEOS -->
+
     <section id="videos">
 
       <div class="section-title">
+
         <h2>Videos</h2>
-        <p>Music in motion.</p>
+
+        <p>
+          Music in motion.
+        </p>
+
       </div>
 
+
       <div class="video-box">
+
         Videos werden hier später eingebunden
+
       </div>
 
     </section>
+
+
+
+    <!-- ABOUT -->
 
     <section id="about">
 
       <div class="section-title">
+
         <h2>About Rico</h2>
+
       </div>
+
 
       <div class="about">
 
         <p>
-          <strong>Rico Bellano</strong> steht für moderne Dance-Musik,
-          elektronische Sounds und eingängige Melodien.
+
+          <strong>Rico Bellano</strong>
+          steht für moderne Dance-Musik,
+          elektronische Sounds und eingängige
+          Melodien.
+
         </p>
+
 
         <br>
 
+
         <p>
-          Als DJ, Producer und Songwriter verbindet Rico moderne
-          elektronische Produktionen mit emotionalen Geschichten
+
+          Als DJ, Producer und Songwriter
+          verbindet Rico moderne elektronische
+          Produktionen mit emotionalen Geschichten
           und tanzbaren Beats.
+
         </p>
+
 
         <br>
 
+
         <p>
-          Von Dance und Discofox bis zu italienisch inspirierten Sounds –
-          jeder Track bekommt seinen eigenen Charakter.
+
+          Von Dance und Discofox bis zu
+          italienisch inspirierten Sounds –
+          jeder Track bekommt seinen eigenen
+          Charakter.
+
         </p>
 
       </div>
 
     </section>
 
+
+
+    <!-- SOCIALS -->
+
     <section id="contact">
 
       <div class="section-title">
+
         <h2>Follow Rico</h2>
-        <p>Stay connected.</p>
+
+        <p>
+          Stay connected.
+        </p>
+
       </div>
+
 
       <div class="socials">
 
-        <a class="social" href="#" target="_blank">
+        <a
+          class="social"
+          href="#">
           Instagram
         </a>
 
-        <a class="social" href="#" target="_blank">
+
+        <a
+          class="social"
+          href="#">
           Facebook
         </a>
 
-        <a class="social" href="#" target="_blank">
+
+        <a
+          class="social"
+          href="#">
           YouTube
         </a>
 
-        <a class="social" href="#" target="_blank">
+
+        <a
+          class="social"
+          href="#">
           TikTok
         </a>
 
@@ -447,31 +757,124 @@
 
     </section>
 
+
+
+    <!-- IMPRESSUM -->
+
+    <section id="impressum">
+
+      <div class="section-title">
+
+        <h2>Impressum</h2>
+
+        <p>
+          Angaben gemäß § 5 DDG
+        </p>
+
+      </div>
+
+
+      <div class="legal">
+
+        <h3>
+          Angaben zum Anbieter
+        </h3>
+
+
+        <p>
+
+          <strong>Jörg Stiefelhagen</strong><br>
+
+          Tätig unter dem Künstlernamen
+          <strong>Rico Bellano</strong>
+
+        </p>
+
+
+        <p>
+
+          Zum Lith 178<br>
+
+          47055 Duisburg<br>
+
+          Deutschland
+
+        </p>
+
+
+        <p>
+
+          <strong>E-Mail:</strong><br>
+
+          info@ricobellanomusic.de
+
+        </p>
+
+
+        <p>
+
+          <strong>Künstlerische Tätigkeit:</strong><br>
+
+          Rico Bellano – DJ • Producer • Songwriter
+
+        </p>
+
+
+        <p>
+
+          Diese Website dient der Information
+          über die musikalische Tätigkeit und
+          Veröffentlichungen von Rico Bellano.
+
+        </p>
+
+      </div>
+
+    </section>
+
+
   </main>
+
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
 
   <footer>
 
     <div class="brand">
+
       RICO <span>BELLANO</span>
+
     </div>
 
-    <p>DJ • Producer • Songwriter</p>
 
-    <p>SOUND ON. WORLD OFF.</p>
+    <p>
+      DJ • Producer • Songwriter
+    </p>
+
+
+    <p>
+      SOUND ON. WORLD OFF.
+    </p>
+
 
     <div class="footer-links">
 
-      <a href="#">
+      <a href="#impressum">
         Impressum
       </a>
 
-      <a href="#">
+
+      <a href="#datenschutz">
         Datenschutz
       </a>
 
     </div>
 
   </footer>
+
 
 </body>
 </html>
