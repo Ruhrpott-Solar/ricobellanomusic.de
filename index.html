@@ -6,7 +6,8 @@
 
   <title>Rico Bellano | DJ • Producer • Songwriter</title>
 
-  <meta name="description" content="Rico Bellano – DJ • Producer • Songwriter. Eigene Musik, Dance, elektronische Sounds, Discofox und italienisch inspirierte Musik.">
+  <meta name="description"
+        content="Rico Bellano – DJ • Producer • Songwriter. Eigene Musik, Dance, elektronische Sounds, Discofox und italienisch inspirierte Musik.">
 
   <style>
     * {
@@ -31,7 +32,9 @@
       text-decoration: none;
     }
 
-    /* HEADER */
+    /* =========================
+       HEADER
+       ========================= */
 
     header {
       position: fixed;
@@ -74,7 +77,9 @@
       color: #00d9ff;
     }
 
-    /* HERO */
+    /* =========================
+       HERO
+       ========================= */
 
     .hero {
       min-height: 100vh;
@@ -151,7 +156,9 @@
       color: #050608;
     }
 
-    /* SECTIONS */
+    /* =========================
+       SECTIONS
+       ========================= */
 
     section {
       max-width: 1200px;
@@ -175,12 +182,18 @@
       color: #888888;
     }
 
-    /* MUSIC */
+    /* =========================
+       MUSIC
+       ========================= */
+
+    .music-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
 
     .music-card {
-      max-width: 900px;
-      margin: auto;
-      padding: 50px 40px;
+      padding: 35px 25px;
       text-align: center;
 
       background:
@@ -195,31 +208,48 @@
 
       box-shadow:
         0 0 35px rgba(0, 217, 255, 0.08);
+
+      transition: 0.3s;
+    }
+
+    .music-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(0, 217, 255, 0.55);
+      box-shadow:
+        0 0 40px rgba(0, 217, 255, 0.14);
     }
 
     .music-card h3 {
-      font-size: 2rem;
+      font-size: 1.7rem;
       margin-bottom: 15px;
+    }
+
+    .music-card .subtitle {
+      color: #00d9ff;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
     }
 
     .music-card p {
       color: #aaaaaa;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .music-buttons {
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
     .music-button {
-      padding: 13px 25px;
+      padding: 11px 17px;
       border: 1px solid #444444;
       border-radius: 30px;
       color: #dddddd;
       transition: 0.3s;
+      font-size: 0.9rem;
     }
 
     .music-button:hover {
@@ -227,7 +257,9 @@
       color: #00d9ff;
     }
 
-    /* ABOUT */
+    /* =========================
+       ABOUT
+       ========================= */
 
     .about-container {
       max-width: 900px;
@@ -269,28 +301,9 @@
       font-weight: bold;
     }
 
-    /* VIDEOS */
-
-    .video-box {
-      max-width: 850px;
-      margin: auto;
-
-      aspect-ratio: 16 / 9;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      text-align: center;
-
-      border: 1px solid rgba(0, 217, 255, 0.22);
-      border-radius: 20px;
-
-      background: #0d1015;
-      color: #777777;
-    }
-
-    /* TIKTOK */
+    /* =========================
+       TIKTOK
+       ========================= */
 
     .social-area {
       text-align: center;
@@ -298,14 +311,12 @@
 
     .tiktok-button {
       display: inline-block;
-
       padding: 15px 35px;
 
       border: 1px solid #00d9ff;
       border-radius: 30px;
 
       color: #00d9ff;
-
       font-weight: bold;
 
       transition: 0.3s;
@@ -319,7 +330,9 @@
         0 0 25px rgba(0, 217, 255, 0.4);
     }
 
-    /* LEGAL */
+    /* =========================
+       LEGAL
+       ========================= */
 
     .legal {
       max-width: 900px;
@@ -355,7 +368,9 @@
       color: #ffffff;
     }
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+       ========================= */
 
     footer {
       border-top: 1px solid rgba(0, 217, 255, 0.20);
@@ -397,7 +412,17 @@
       color: #00d9ff;
     }
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 850px) {
+
+      .music-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
 
     @media (max-width: 700px) {
 
@@ -421,10 +446,6 @@
         font-size: 2rem;
       }
 
-      .music-card {
-        padding: 35px 20px;
-      }
-
       .about-box {
         padding: 28px 22px;
       }
@@ -440,8 +461,9 @@
 
 <body>
 
-
-  <!-- HEADER -->
+  <!-- =========================
+       HEADER
+       ========================= -->
 
   <header>
 
@@ -462,8 +484,7 @@
         <a href="#home">Home</a>
         <a href="#music">Music</a>
         <a href="#about">About</a>
-        <a href="#videos">Videos</a>
-        <a href="#contact">TikTok</a>
+        <a href="#tiktok">TikTok</a>
 
       </nav>
 
@@ -472,7 +493,9 @@
   </header>
 
 
-  <!-- MAIN -->
+  <!-- =========================
+       MAIN
+       ========================= -->
 
   <main>
 
@@ -521,7 +544,9 @@
     </section>
 
 
-    <!-- MUSIC -->
+    <!-- =========================
+         MUSIC
+         ========================= -->
 
     <section id="music">
 
@@ -530,50 +555,170 @@
         <h2>Meine Musik</h2>
 
         <p>
-          Musik zum Hören, Tanzen, Träumen und Genießen.
+          Drei musikalische Welten – eine Leidenschaft für Musik.
         </p>
 
       </div>
 
 
-      <div class="music-card">
-
-        <h3>Rico Bellano</h3>
-
-        <p>
-          Meine aktuellen Veröffentlichungen
-          findest du auf den jeweiligen Musikplattformen.
-        </p>
+      <div class="music-grid">
 
 
-        <div class="music-buttons">
+        <!-- RICO BELLANO -->
 
-          <a
-            class="music-button"
-            href="https://open.spotify.com/artist/4GvoD06h6UGMhpCiiIQp4z"
-            target="_blank"
-            rel="noopener noreferrer">
+        <div class="music-card">
 
-            🎵 Spotify
+          <h3>Rico Bellano</h3>
 
-          </a>
+          <div class="subtitle">
+            DJ • PRODUCER • SONGWRITER
+          </div>
+
+          <p>
+            Dance, elektronische Musik, Discofox
+            und italienisch inspirierte Sounds.
+          </p>
+
+
+          <div class="music-buttons">
+
+            <a
+              class="music-button"
+              href="https://open.spotify.com/artist/4GvoD06h6UGMhpCiiIQp4z"
+              target="_blank"
+              rel="noopener noreferrer">
+              🎵 Spotify
+            </a>
+
+
+            <a
+              class="music-button"
+              href="https://www.amazon.de/dp/B0HHKRXHK7"
+              target="_blank"
+              rel="noopener noreferrer">
+              🛒 Amazon Music
+            </a>
+
+
+            <a
+              class="music-button"
+              href="https://www.youtube.com/watch?v=0o9olYc9iT0"
+              target="_blank"
+              rel="noopener noreferrer">
+              ▶ YouTube
+            </a>
+
+          </div>
 
         </div>
 
-        <br>
 
-        <p>
-          Weitere Plattformen und einzelne
-          Song-Links werden mit kommenden
-          Veröffentlichungen ergänzt.
-        </p>
+        <!-- CODY MAYFIELD -->
+
+        <div class="music-card">
+
+          <h3>Cody Mayfield</h3>
+
+          <div class="subtitle">
+            COUNTRY
+          </div>
+
+          <p>
+            Eine andere musikalische Welt:
+            Country, Geschichten und Emotionen.
+          </p>
+
+
+          <div class="music-buttons">
+
+            <a
+              class="music-button"
+              href="https://open.spotify.com/album/1GZOLG14wgpSUDNv8d4SPm"
+              target="_blank"
+              rel="noopener noreferrer">
+              🎵 Spotify
+            </a>
+
+
+            <a
+              class="music-button"
+              href="https://www.amazon.de/music/player/artists/B0HHLGSJXN/cody-mayfiled"
+              target="_blank"
+              rel="noopener noreferrer">
+              🛒 Amazon Music
+            </a>
+
+
+            <a
+              class="music-button"
+              href="https://youtu.be/IEIrn72sulA"
+              target="_blank"
+              rel="noopener noreferrer">
+              ▶ YouTube
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- RICO & GIULIA -->
+
+        <div class="music-card">
+
+          <h3>Rico Bellano &amp; Giulia</h3>
+
+          <div class="subtitle">
+            DUETT
+          </div>
+
+          <p>
+            Deutsch-italienische Songs,
+            romantische Geschichten und tanzbare Duette.
+          </p>
+
+
+          <div class="music-buttons">
+
+            <a
+              class="music-button"
+              href="https://open.spotify.com/album/4Y92R8kDHKY0IMcFnmCaEb"
+              target="_blank"
+              rel="noopener noreferrer">
+              🎵 Spotify
+            </a>
+
+
+            <a
+              class="music-button"
+              href="https://amazon.de/music/player/albums/B0HHZNGTH6"
+              target="_blank"
+              rel="noopener noreferrer">
+              🛒 Amazon Music
+            </a>
+
+
+            <a
+              class="music-button"
+              href="https://youtu.be/7UCkU9DRk6U"
+              target="_blank"
+              rel="noopener noreferrer">
+              ▶ YouTube
+            </a>
+
+          </div>
+
+        </div>
+
 
       </div>
 
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- =========================
+         ABOUT
+         ========================= -->
 
     <section id="about">
 
@@ -598,26 +743,20 @@
           <h3>Wer steckt hinter der Musik?</h3>
 
           <p>
-
             Ich wollte meine eigene Musik machen,
             um <span class="highlight">Menschen zu begeistern</span>.
-
           </p>
 
           <p>
-
             Musik kann gute Laune machen,
             zum Tanzen einladen, Erinnerungen wecken
             oder einfach dabei helfen, für einen Moment
             aus dem Alltag abzuschalten.
-
           </p>
 
           <p>
-
             Genau dieses Gefühl möchte ich mit
             meiner Musik vermitteln.
-
           </p>
 
         </div>
@@ -630,44 +769,33 @@
           <h3>Warum Rico Bellano?</h3>
 
           <p>
-
             Rico Bellano ist meine musikalische Seite
             für <span class="highlight">
             Dance, elektronische Musik, Discofox
             und italienisch inspirierte Sounds</span>.
-
           </p>
 
           <p>
-
             Ich wollte meiner eigenen Musik
             eine eigene Identität geben und mit
             verschiedenen Sounds und Ideen
             experimentieren.
-
           </p>
 
           <p>
-
             Dabei möchte ich mich nicht auf eine
             einzige Richtung festlegen.
-
             Mal darf ein Song energiegeladen sein,
             mal romantisch, mal einfach nur Spaß machen.
-
           </p>
 
           <p>
-
             Für mich zählt vor allem, dass die Musik
             Menschen erreicht und ihnen etwas gibt.
-
           </p>
 
           <p class="highlight">
-
             SOUND ON. WORLD OFF.
-
           </p>
 
         </div>
@@ -680,39 +808,29 @@
           <h3>Warum Cody Mayfield?</h3>
 
           <p>
-
             Mit Cody Mayfield kann ich eine ganz
             andere musikalische Seite zeigen.
-
           </p>
 
           <p>
-
             Cody steht für
             <span class="highlight">Country-Musik</span>.
-
           </p>
 
           <p>
-
             Hier kann ich Geschichten erzählen,
             andere Stimmungen aufgreifen und mich
             musikalisch ganz anders ausdrücken.
-
           </p>
 
           <p>
-
             Rico Bellano und Cody Mayfield sind
             unterschiedliche musikalische Welten –
             aber beide haben denselben Ursprung:
-
           </p>
 
           <p class="highlight">
-
             Meine Leidenschaft für eigene Musik.
-
           </p>
 
         </div>
@@ -722,47 +840,36 @@
 
         <div class="about-box">
 
-          <h3>Rico Bellano & Giulia</h3>
+          <h3>Rico Bellano &amp; Giulia</h3>
 
           <p>
-
             Manchmal passt eine Stimme allein
             nicht zu einer Geschichte.
-
           </p>
 
           <p>
-
             Deshalb gibt es
-            <span class="highlight">Rico Bellano & Giulia</span>.
-
+            <span class="highlight">Rico Bellano &amp; Giulia</span>.
           </p>
 
           <p>
-
             Giulia ist meine weibliche
             Duett-Künstlerfigur.
-
             Gemeinsam können wir Geschichten erzählen,
             die durch zwei Stimmen noch mehr Gefühl
             bekommen.
-
           </p>
 
           <p>
-
             Besonders deutsch-italienische Songs,
             romantische Geschichten und tanzbare
             Duette gehören zu dieser gemeinsamen
             musikalischen Welt.
-
           </p>
 
           <p class="highlight">
-
             Zwei Stimmen. Zwei Perspektiven.
             Eine gemeinsame Musik.
-
           </p>
 
         </div>
@@ -775,72 +882,41 @@
           <h3>Was ich mit meiner Musik erreichen möchte</h3>
 
           <p>
-
             Ich möchte keine Musik machen,
             die einfach nur im Hintergrund läuft.
-
           </p>
 
           <p>
-
             Ich möchte Songs machen, bei denen man
             mitsingt, tanzt, lächelt oder sich an einen
             besonderen Moment erinnert.
-
           </p>
 
           <p>
-
             Wenn ein Song von mir jemanden für ein
             paar Minuten glücklich macht, gute Laune
             bringt oder einfach den Alltag vergessen
             lässt, dann habe ich genau das erreicht,
             was ich mit meiner Musik erreichen möchte.
-
           </p>
 
           <p class="highlight">
-
             Meine Musik soll Menschen begeistern.
-
           </p>
 
         </div>
 
-      </div>
-
-    </section>
-
-
-    <!-- VIDEOS -->
-
-    <section id="videos">
-
-      <div class="section-title">
-
-        <h2>Videos</h2>
-
-        <p>
-          Music in motion.
-        </p>
-
-      </div>
-
-
-      <div class="video-box">
-
-        <p>
-          Videos werden hier später ergänzt.
-        </p>
 
       </div>
 
     </section>
 
 
-    <!-- TIKTOK -->
+    <!-- =========================
+         TIKTOK
+         ========================= -->
 
-    <section id="contact">
+    <section id="tiktok">
 
       <div class="section-title">
 
@@ -870,7 +946,9 @@
     </section>
 
 
-    <!-- IMPRESSUM -->
+    <!-- =========================
+         IMPRESSUM
+         ========================= -->
 
     <section id="impressum">
 
@@ -890,39 +968,26 @@
         <h3>Angaben zum Anbieter</h3>
 
         <p>
-
           <strong>Jörg Stiefelhagen</strong><br>
-
           Tätig unter dem Künstlernamen
           <strong>Rico Bellano</strong>
-
         </p>
 
-
         <p>
-
           Zum Lith 178<br>
           47055 Duisburg<br>
           Deutschland
-
         </p>
-
 
         <p>
-
           <strong>E-Mail:</strong><br>
-
           info@ricobellanomusic.de
-
         </p>
-
 
         <h3>Künstlerische Tätigkeit</h3>
 
         <p>
-
           Rico Bellano – DJ • Producer • Songwriter
-
         </p>
 
       </div>
@@ -930,7 +995,9 @@
     </section>
 
 
-    <!-- DATENSCHUTZ -->
+    <!-- =========================
+         DATENSCHUTZ
+         ========================= -->
 
     <section id="datenschutz">
 
@@ -947,137 +1014,112 @@
 
       <div class="legal">
 
-
         <h3>1. Verantwortlicher</h3>
 
         <p>
-
           Verantwortlicher für die Verarbeitung
           personenbezogener Daten auf dieser
           Website ist:
-
         </p>
 
         <p>
-
           <strong>Jörg Stiefelhagen</strong><br>
-
           Tätig unter dem Künstlernamen
           <strong>Rico Bellano</strong><br>
-
           Zum Lith 178<br>
-
           47055 Duisburg<br>
-
           Deutschland
-
         </p>
 
         <p>
-
           E-Mail:
           info@ricobellanomusic.de
-
         </p>
 
 
         <h3>2. Hosting der Website</h3>
 
         <p>
-
           Diese Website wird über
           <strong>GitHub Pages</strong>
           bereitgestellt.
-
         </p>
 
         <p>
-
           Beim Aufruf der Website können technisch
           erforderliche Informationen verarbeitet
           werden, die für die Bereitstellung und
           Sicherheit der Website erforderlich sind.
-
         </p>
 
 
         <h3>3. Zweck der Datenverarbeitung</h3>
 
         <p>
-
           Die Verarbeitung technisch erforderlicher
           Daten dient dazu, die Website sicher und
           funktionsfähig bereitzustellen und
           Missbrauch bzw. Angriffe erkennen und
           abwehren zu können.
-
         </p>
 
 
         <h3>4. Kontaktaufnahme per E-Mail</h3>
 
         <p>
-
           Wenn Sie per E-Mail Kontakt aufnehmen,
           werden die dabei übermittelten
           personenbezogenen Daten zur Bearbeitung
           Ihrer Anfrage und zur Kommunikation
           verwendet.
-
         </p>
 
 
         <h3>5. Analyse und Tracking</h3>
 
         <p>
-
           Auf dieser Website werden derzeit keine
           eigenen Analyse- oder Tracking-Dienste
           wie Google Analytics eingesetzt.
-
         </p>
 
 
         <h3>6. Social Media und externe Inhalte</h3>
 
         <p>
-
           Auf dieser Website werden derzeit keine
           Social-Media-Widgets und keine
           eingebetteten Videos verwendet.
-
         </p>
 
         <p>
-
           Der Link zu TikTok führt beim Anklicken
           zu einer externen Website. Für die
           Datenverarbeitung auf der externen
           Website ist deren jeweiliger Betreiber
           verantwortlich.
-
         </p>
 
 
         <h3>7. Musikplattformen</h3>
 
         <p>
+          Die auf dieser Website vorhandenen Links
+          zu Spotify, Amazon Music und YouTube
+          führen beim Anklicken zu externen Angeboten
+          der jeweiligen Anbieter.
+        </p>
 
-          Der auf dieser Website vorhandene
-          Spotify-Link führt beim Anklicken zu
-          einem externen Angebot von Spotify.
-
-          Für die Datenverarbeitung auf der
-          externen Website ist Spotify
-          verantwortlich.
-
+        <p>
+          Für die Datenverarbeitung auf den
+          jeweiligen externen Websites ist der
+          jeweilige Betreiber verantwortlich.
         </p>
 
 
         <h3>8. Ihre Rechte</h3>
 
         <p>
-
           Sie haben im Rahmen der gesetzlichen
           Vorschriften insbesondere das Recht auf
           Auskunft über die zu Ihrer Person
@@ -1085,19 +1127,16 @@
           gesetzlichen Voraussetzungen erfüllt sind –
           auf Berichtigung, Löschung oder
           Einschränkung der Verarbeitung.
-
         </p>
 
 
         <h3>9. Änderungen</h3>
 
         <p>
-
           Diese Datenschutzerklärung kann
           angepasst werden, wenn sich die
           technische Gestaltung dieser Website
           oder die eingesetzten Dienste ändern.
-
         </p>
 
       </div>
@@ -1108,26 +1147,23 @@
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+       ========================= -->
 
   <footer>
 
     <div class="brand">
-
       RICO <span>BELLANO</span>
-
     </div>
-
 
     <p>
       DJ • Producer • Songwriter
     </p>
 
-
     <p>
       SOUND ON. WORLD OFF.
     </p>
-
 
     <div class="footer-links">
 
